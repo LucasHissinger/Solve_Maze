@@ -140,9 +140,9 @@ def update():
   for i in range(Maze.size):
     for j in range(Maze.size):
       if Maze.labyrinthe[i][j][0] == -1 or Maze.labyrinthe[i][j][0] == -2:
-          pygame.draw.rect(screen, (0, 0, 0), (50+int(800/Maze_size)*j, 50+int(800/Maze_size)*i, int(800/Maze_size), int(800/Maze_size)))
+          pygame.draw.rect(screen, (0, 0, 0), (10+int(800/Maze_size)*j, 10+int(800/Maze_size)*i, int(800/Maze_size), int(800/Maze_size)))
       elif Maze.labyrinthe[i][j][0] == -10:
-          pygame.draw.rect(screen, (238,130,238), (50+int(800/Maze_size)*j, 50+int(800/Maze_size)*i, int(800/Maze_size), int(800/Maze_size)))
+          pygame.draw.rect(screen, (238,130,238), (10+int(800/Maze_size)*j, 10+int(800/Maze_size)*i, int(800/Maze_size), int(800/Maze_size)))
 
 while running:
     for event in pygame.event.get():
